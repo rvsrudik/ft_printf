@@ -96,6 +96,7 @@ void		ft_precision(t_printf *params)
 {
 	if (params->precision == -1)
 		return ;
+	params->flag_space = 0;
 	if (params->type == 'p')
 		ft_precision_for_p(params);
 	if (params->type == 's' || params->type == 'S')
