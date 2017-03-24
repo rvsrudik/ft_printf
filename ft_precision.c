@@ -96,7 +96,7 @@ void		ft_precision(t_printf *params)
 {
 	if (params->precision == -1)
 		return ;
-	//if (!ft_strchr("duiDU", params->type))
+	if (!ft_strchr("duiDU", params->type))
 		params->flag_space = 1;
 	if (params->type == 'p')
 		ft_precision_for_p(params);
