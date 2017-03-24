@@ -19,7 +19,7 @@ void	ft_flag_space(t_printf *params)
 	int		i;
 
 	i = 0;
-	if (params->precision > 0)
+	if (params->precision > 0 && !ft_strchr("duiDU", params->type))
 		params->flag_space = 0;
 	if (!params->flag_space || params->flag_plus)
 		return ;
